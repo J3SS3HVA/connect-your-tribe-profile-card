@@ -29,40 +29,40 @@
 
     <section>
       <dl class="info1">
-        <dt id="school">
+        <dt>
           <h3>school</h3>
-          HVA
+          <%= data.School %>
         </dt>
-        <dt id="jobs">
+        <dt>
           <h3>part-time job</h3>
-          B.B HAL
+          <%= data.jobs %>
         </dt>
-        <dt id="interns">
+        <dt>
           <h3>interns</h3>
-          youfa / lead machine
+          <p><%= data.intern %></p>
         </dt>
-        <dt id="games">
+        <dt>
           <h3>games</h3>
-          PC games
+          <%= data.Games %>
         </dt>
-        <dt id="sports">
+        <dt>
           <h3>sports</h3>
-          Gym
+          <%= data.Sport %>
         </dt>
       </dl>
 
       <dl class="info2">
-        <dt id="full">
+        <dt>
           <h3>Full-Name</h3>
-          Jesse Leeuwerink
+          <%= data.name %> <%= data.surname %>
         </dt>
-        <dt id="age">
+        <dt>
           <h3>age</h3>
-          20
+          <%= data.leeftijd %>
         </dt>
-        <dt id="city">
+        <dt>
           <h3>city</h3>
-          Zaandam
+          <%= data.stad %>
         </dt>
       </dl>
     </section>
@@ -70,10 +70,7 @@
       <div id="about1">
         <h2>about me</h2>
         <p>
-          Jesse Leeuwerink: student van het hva. <br />
-          Ben zelf een rustig persoon die graag mensen helpt bij problemen met
-          html en css. Tijdens deze opleiding hoop ik dat ik veel leer en met
-          een diploma deze opleiding afrond.
+          <%= data.bio %>
         </p>
       </div>
       <div id="about2">
