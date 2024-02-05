@@ -1,14 +1,86 @@
 <%- include('./partials/head') %>
-
-<article>
+<!-- <article>
   <header>
     <h1>Hallo</h1>
     <p>mijn naam is</p>
   </header>
 
   <p><%= data.name %></p>
+  <p><%= data.surname %></p>
 
   <footer></footer>
-</article>
+</article> -->
+<body>
+  <div class="plane main" id="mouse-follow">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <article>
+    <header>
+      <h1><%= data.name %></h1>
+
+      <button alt="expand button">[]</button>
+      <img src="" alt="profile picture" width="800" height="800" />
+    </header>
+
+    <section>
+      <dl class="info1">
+        <dt id="school">
+          <h3>school</h3>
+          HVA
+        </dt>
+        <dt id="jobs">
+          <h3>part-time job</h3>
+          B.B HAL
+        </dt>
+        <dt id="interns">
+          <h3>interns</h3>
+          youfa / lead machine
+        </dt>
+        <dt id="games">
+          <h3>games</h3>
+          PC games
+        </dt>
+        <dt id="sports">
+          <h3>sports</h3>
+          Gym
+        </dt>
+      </dl>
+
+      <dl class="info2">
+        <dt id="full">
+          <h3>Full-Name</h3>
+          Jesse Leeuwerink
+        </dt>
+        <dt id="age">
+          <h3>age</h3>
+          20
+        </dt>
+        <dt id="city">
+          <h3>city</h3>
+          Zaandam
+        </dt>
+      </dl>
+    </section>
+    <section class="about">
+      <div id="about1">
+        <h2>about me</h2>
+        <p>
+          Jesse Leeuwerink: student van het hva. <br />
+          Ben zelf een rustig persoon die graag mensen helpt bij problemen met
+          html en css. Tijdens deze opleiding hoop ik dat ik veel leer en met
+          een diploma deze opleiding afrond.
+        </p>
+      </div>
+      <div id="about2">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">click</a>
+      </div>
+    </section>
+  </article>
+  
 
 <%- include('./partials/foot') %>
