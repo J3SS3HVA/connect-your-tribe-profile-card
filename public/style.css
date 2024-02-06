@@ -1,3 +1,25 @@
+:root{
+  --main--color--blue: rgba(0, 239, 255, 1);
+  --main-font: "Aktiv-Rg", sans-serif;
+}
+
+@font-face {
+  font-family: "Aktiv-Lt";
+  src: url(../assets/fonts/AktivGrotesk_Lt.ttf);
+}
+@font-face {
+  font-family: "Aktiv-Rg";
+  src: url(../assets/fonts/AktivGrotesk_Rg.ttf);
+}
+@font-face {
+  font-family: "Aktiv-Md";
+  src: url(../assets/fonts/AktivGrotesk_Md.ttf);
+}
+@font-face {
+  font-family: "Aktiv-Bd";
+  src: url(../assets/fonts/AktivGrotesk_Bd.ttf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,7 +38,7 @@ body {
   height: 100vh;
   font-family: monospace;
   background-color: black;
-  color: rgba(0, 239, 255, 1);
+  color: var(--main--color--blue);
   background-image: url("https://media2.giphy.com/media/jaOXKCxtBPLieRLI0c/giphy.gif");
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,7 +95,7 @@ h2 {
   margin: 0;
   font-size: medium;
   text-transform: uppercase;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--main-font);
   color: white;
 }
 
@@ -81,7 +103,7 @@ h3 {
   font-size: small;
   margin: 0;
   text-transform: uppercase;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--main-font);
   color: white;
 }
 button {
@@ -212,32 +234,32 @@ p {
 
 a {
   text-decoration: none;
-  color: #00c3ff;
+  color: var(--main--color--blue);
 }
 
 /*animations that change text colors*/
 
 @keyframes animate2 {
   0% {
-    color: rgba(0, 239, 255, 1);
+    color: var(--main--color--blue);
   }
   20% {
     color: rgb(255, 50, 50);
   }
   40% {
-    color: rgba(0, 239, 255, 1);
+    color: var(--main--color--blue);
   }
   60% {
     color: rgb(255, 50, 50);
   }
   80% {
-    color: rgba(0, 239, 255, 1);
+    color: var(--main--color--blue);
   }
   100% {
     color: rgb(255, 50, 50);
   }
   120% {
-    color: rgba(0, 239, 255, 1);
+    color: var(--main--color--blue);
   }
 }
 /* rotates entire article when button is pressed */
@@ -259,15 +281,18 @@ a {
 }
 
 #about1::-webkit-scrollbar{
-  background: red; 
-  border-radius: 1px;
-  scrollbar-width: 2px;
   width: 1em;
 }
 
 #about1::-webkit-scrollbar-track{
-  color: black;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
+
+#about1::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
 #about1 {
   width: 70%;
   overflow: scroll;
@@ -283,7 +308,9 @@ a {
 #about2 {
   width: 30%;
   margin-top: 0;
-  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 0 0 1rem 0rem;
   text-align: center;
   background-color: rgb(65, 65, 65);
@@ -429,4 +456,14 @@ body.expand img {
 
 body.expand h1 {
   box-shadow: 0px 0px 28px rgba(255, 0, 0, 0.8), 0 -10px 20px -5px #00c3ff;
+}
+
+@media (max-width: 30em){
+  header img{
+    margin-left: 0;
+  }
+
+  body.expand img{
+    width: 8em;
+  }
 }
