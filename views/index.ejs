@@ -10,73 +10,79 @@
 
   <footer></footer>
 </article> -->
-  <div class="plane main" id="mouse-follow">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-  </div>
-  <article>
-    <header>
-      <h1><%= data.name %></h1>
+<div class="plane main" id="mouse-follow">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+<article>
+  <header>
+    <h1><%= data.name %></h1>
 
-      <button alt="expand button">[]</button>
-      <img src="" alt="profile picture" width="800" height="800" />
-    </header>
+    <button alt="expand button">[]</button>
+    <img src="" alt="profile picture" width="800" height="800" />
+  </header>
 
-    <section>
-      <dl class="info1">
+  <section>
+    <dl class="info1">
+      <dt>
+        <h2>school</h2>
+        <%= data.custom.School %>
+      </dt>
+      <dt>
+        <h2>part-time job</h2>
+        <%= data.custom.jobs %>
+      </dt>
+      <dt>
+        <h2>interns</h2>
+        <%= data.custom.intern %>
+      </dt>
+      <dt>
+        <h2>games</h2>
+        <%= data.custom.Games %>
+      </dt>
+      <dt>
+        <h2>sports</h2>
+        <%= data.custom.Sport %>
+      </dt>
+    </dl>
+
+    <dl class="info2">
+      <dt>
+        <h2>Full-Name</h2>
+        <%= data.name %> <%= data.surname %>
+      </dt>
+      <dt>
+        <h2>age</h2>
+        <%= data.custom.leeftijd %>
+      </dt>
+      <dt>
+        <h2>city</h2>
+        <%= data.custom.stad %>
+      </dt>
+    </dl>
+  </section>
+  <section class="about">
+    <div>
+      <h2>about me</h2>
+      <p><%= data.bio %></p>
+    </div>
+    <div>
+      <dl>
         <dt>
-          <h3>school</h3>
-          <%= data.custom.School %>
+          <h2>Nickname</h2>
+          <%= data.nickname %>
         </dt>
         <dt>
-          <h3>part-time job</h3>
-          <%= data.custom.jobs %>
-        </dt>
-        <dt>
-          <h3>interns</h3>
-          <p><%= data.custom.intern %></p>
-        </dt>
-        <dt>
-          <h3>games</h3>
-          <%= data.custom.Games %>
-        </dt>
-        <dt>
-          <h3>sports</h3>
-          <%= data.custom.Sport %>
+          <h2>klas</h2>
+          <%= data.id.name %>
         </dt>
       </dl>
-
-      <dl class="info2">
-        <dt>
-          <h3>Full-Name</h3>
-          <%= data.name %> <%= data.surname %>
-        </dt>
-        <dt>
-          <h3>age</h3>
-          <%= data.custom.leeftijd %>
-        </dt>
-        <dt>
-          <h3>city</h3>
-          <%= data.custom.stad %>
-        </dt>
-      </dl>
-    </section>
-    <section class="about">
-      <div id="about1">
-        <h2>about me</h2>
-        <p>
-          <%= data.bio %>
-        </p>
-      </div>
-      <div id="about2">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">click</a>
-      </div>
-    </section>
-  </article>
-  
+    </div>
+  </section>
+</article>
 
 <%- include('./partials/foot') %>
