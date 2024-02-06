@@ -1,7 +1,7 @@
 
 :root {
-  --main--color--blue: rgba(0, 239, 255, 1);
-  --secondary--color--red: rgba(255, 0, 0);
+  --main--color--magenta: rgb(208, 93, 253);
+  --secondary--color--pink: rgb(255, 0, 191);
   --main-font: "Aktiv-Rg", sans-serif;
   --border--white: 2px solid white;
 }
@@ -39,7 +39,7 @@ h3{
 
 a {
   text-decoration: none;
-  color: var(--main--color--blue);
+  color: var(--main--color--magenta);
 }
 
 * {
@@ -62,9 +62,10 @@ body {
   height: 100vh;
   font-family: monospace;
   background-color: black;
-  color: var(--main--color--blue);
-  background-image: url("https://media2.giphy.com/media/jaOXKCxtBPLieRLI0c/giphy.gif");
+  color: var(--main--color--magenta);
+  background-image: url("https://i.pinimg.com/originals/e9/db/09/e9db09b6ff90a4b6cf6f5b01a118524f.gif");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   transition: 0.5s;
   cursor: none;
@@ -92,7 +93,7 @@ header {
   width: 100%;
   height: 10em;
   position: relative;
-  background-image: url("https://i.gifer.com/origin/f2/f2deaec004f4bcba643fb992941d163b_w200.gif");
+  background-image: url("https://i.makeagif.com/media/9-18-2018/RySj_U.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -159,7 +160,7 @@ header img {
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
   transition: 0.25s 0.15s;
   right: 11em;
-  background-image: url("https://i.pinimg.com/originals/00/f9/ae/00f9ae2f5be3d8be8c741ef2a0268782.gif");
+  background-image: url("https://media1.tenor.com/m/4Ds8A3wAsYAAAAAC/goku-black.gif");
   background-size: cover;
 }
 
@@ -242,25 +243,25 @@ section {
 
 @keyframes animate2 {
   0% {
-    color: var(--main--color--blue);
+    color: var(--main--color--magenta);
   }
   20% {
-    color: var(--secondary--color--red);
+    color: var(--secondary--color--pink);
   }
   40% {
-    color: var(--main--color--blue);
+    color: var(--main--color--magenta);
   }
   60% {
-    color: var(--secondary--color--red);
+    color: var(--secondary--color--pink);
   }
   80% {
-    color: var(--main--color--blue);
+    color: var(--main--color--magenta);
   }
   100% {
-    color: var(--secondary--color--red);
+    color: var(--secondary--color--pink);
   }
   120% {
-    color: var(--main--color--blue);
+    color: var(--main--color--magenta);
   }
 }
 /* rotates entire article when button is pressed */
@@ -291,6 +292,7 @@ section {
   text-align: center;
   background-color: rgb(65, 65, 65);
   /* box-shadow: inset 0px 5px 20px 1px rgb(0 0 0 / 62%); */
+  border-radius: 0 0 0 1em;
 }
 
 .about div:first-child::-webkit-scrollbar {
@@ -416,15 +418,14 @@ section {
 /* expand content */
 
 body.expand header {
-  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3cbfda35-4958-464e-965d-11561bcbb648/dde6qjw-f6594d08-26cb-4c54-91c1-62b90dfc083d.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNjYmZkYTM1LTQ5NTgtNDY0ZS05NjVkLTExNTYxYmNiYjY0OFwvZGRlNnFqdy1mNjU5NGQwOC0yNmNiLTRjNTQtOTFjMS02MmI5MGRmYzA4M2QuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.sBjUBKkkZ4jTAX5zEuPJSY_LmhWHR-yKhrEmfdDzLSA");
-  background-position-y: 70%;
+  background-image: url("https://i.pinimg.com/originals/a1/e7/16/a1e7160ca98c3b604e0eda9a6760e285.gif");
   height: 10em;
   transition: 0.5s;
 }
 
 body.expand {
   font-size: 1.15em;
-  background-image: url("https://i.pinimg.com/originals/d0/02/79/d00279a83820aa6f77e1f42e73a6e3f2.gif");
+  background-image: url("https://64.media.tumblr.com/621cf59dca0cfb2c0ed55a459265bc5e/0b3ede05cd4a26b2-0a/s400x600/34c7f33d2c68622ae3919f92965243f1a9b0a798.gif");
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0.5s;
@@ -432,7 +433,7 @@ body.expand {
 
 body.expand article {
   max-width: 50em;
-  box-shadow: 0px 0px 28px var(--secondary--color--red), 0 -10px 20px -5px #00c3ff;
+  box-shadow: 0 0 20px 10pxvar(--secondary--color--pink);
   animation: rotate-article 1.2s;
 }
 
@@ -454,19 +455,19 @@ body.expand p {
 
 body.expand img {
   width: 8em;
-  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/1844793235638220380/77C010E8076978C97A1C603E65DE53F4401A47CA/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true");
+  background-image: url("https://i.pinimg.com/originals/1f/b4/a8/1fb4a8dc6e2c820fc035a12978ccd031.gif");
   background-position: center;
-  box-shadow: 0px 0px 28px var(--secondary--color--red), 0 -10px 20px -5px #00c3ff;
-  transition: 0s;
+  box-shadow: 0px 0px 28px var(--secondary--color--pink);
+  transition: 0.2s;
 }
 
 body.expand h1 {
-  box-shadow: 0px 0px 28px var(--secondary--color--red), 0 -10px 20px -5px #00c3ff;
+  box-shadow: 0px 0px 28px var(--secondary--color--pink);
 }
 
 /* bigger format */
 
-@media (min-width: 30em) {
+@media (min-width: 34.5em) {
 
   
 header img {
@@ -474,7 +475,7 @@ header img {
 }
   
   body.expand img {
-    width: 10em;
+    width: 9em;
   }
 
   .about div:first-child::-webkit-scrollbar {
